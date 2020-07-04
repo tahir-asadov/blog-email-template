@@ -40,6 +40,45 @@
                         pointer-events: auto;
                         cursor: default;
                     }
+            .container {
+                display: block;
+                width: 100%;
+            }
+            .container > tbody {
+                display: block;
+                width: 100%;
+            }
+            .container-center {
+                display: block;
+                width: 100%;
+                text-align: center!important;
+            }
+            .container-center > tbody{
+                display: block;
+                width: 100%;
+                text-align: center!important;
+            }
+            .column {
+                display: block;
+                width: 100%;
+            }
+            .row {
+                display: block;
+            }
+            .column-center {
+                display: block;
+                width: 100%;
+                text-align: center!important;
+            }
+            .desktop-column {
+                display: none;
+            }
+        }
+        .rollover:hover .rollover-main { 
+            max-height: 0px !important;
+        }  
+        .rollover:hover div img {
+            max-height: none !important;
         }
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
             a[href^="tel"], a[href^="sms"] {
@@ -84,18 +123,42 @@
         <!-- Header -->
         <tr>
             <td>
-                <table width="800" cellpadding="0" cellspacing="0" border="0" align="center">
-                    <tr>
-                        <td>
-                            <table width="600" height="95" cellpadding="0" cellspacing="0" border="0" align="center" style="background: #434343;">
-                                <tr>
-                                    <td style="font-size: 21px;letter-spacing: 0px;line-height: 21px;color: #ffffff;font-weight: 600;font-family: Montserrat;">
-                                        <a href="/">&nbsp; BLOG EMAIL</a>
+                <table class="container" width="800" cellpadding="0" cellspacing="0" border="0" align="center" style="background: #434343;">
+                    <tr class="row">
+                        <td class="column">
+                            <table class="container" class="container-center" width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+                                <tr class="row">
+                                    <td class="column">
+                                        <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                            <tr>
+                                                <td height="35"></td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="column-center" style="font-size: 21px;letter-spacing: 0px;line-height: 21px;color: #ffffff;font-weight: 600;font-family: Montserrat, sans-serif;">
+                                                    <a href="/" style="color: white;text-decoration: none;font-family: Montserrat, sans-serif;">&nbsp; BLOG EMAIL</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="35"></td>
+                                            </tr>
+                                        </table>
                                     </td>
-                                    <td style="text-align: right;">
-                                        <a style="display: inline-block;padding: 5px;margin: 5px;font-size: 16px;letter-spacing: 1px;line-height: 16px;color: #ffffff;font-weight: 400;font-family: Poppins;" href="/">Product</a>
-                                        <a style="display: inline-block;padding: 5px;margin: 5px;font-size: 16px;letter-spacing: 1px;line-height: 16px;color: #ffffff;font-weight: 400;font-family: Poppins;" href="/">Services</a>
-                                        <a style="display: inline-block;padding: 5px;margin: 5px;font-size: 16px;letter-spacing: 1px;line-height: 16px;color: #ffffff;font-weight: 400;font-family: Poppins;" href="/">Contact</a>
+                                    <td class="column">
+                                        <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                            <tr>
+                                                <td height="35"></td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="column-center" style="text-align: right;">
+                                                    <a style="display: inline-block;padding: 0 5px;margin: 0 5px;font-size: 16px;letter-spacing: 1px;line-height: 16px;color: #ffffff;font-weight: 400;font-family: Poppins, sans-serif;text-decoration: none;" href="/">Product</a>
+                                                    <a style="display: inline-block;padding: 0 5px;margin: 0 5px;font-size: 16px;letter-spacing: 1px;line-height: 16px;color: #ffffff;font-weight: 400;font-family: Poppins, sans-serif;text-decoration: none;" href="/">Services</a>
+                                                    <a style="display: inline-block;padding: 0 5px;margin: 0 5px;font-size: 16px;letter-spacing: 1px;line-height: 16px;color: #ffffff;font-weight: 400;font-family: Poppins, sans-serif;text-decoration: none;" href="/">Contact</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="35"></td>
+                                            </tr>
+                                        </table>
                                     </td>
                                 </tr>
                             </table>
@@ -107,11 +170,36 @@
         <!-- Header -->
         <tr>
             <td>
-                <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                <table class="container" width="800" cellpadding="0" cellspacing="0" border="0" align="center" style="background-image: url( https://blog-email-template.tahirasadov.com/images/header.png?v=2 );background-repeat: no-repeat;background-position: center;">
                     <tr>
                         <td>
-                            <table width="600" height="300" cellpadding="0" cellspacing="0" border="0" align="center" style="background-image: url( https://blog-email-template.tahirasadov.com/images/header.png?v=2 );background-repeat: no-repeat;background-position: center;">
-
+                            <table class="container" width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+                                <tr>
+                                    <td>
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                            <tr>
+                                                <td height="120"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 30px;line-height: 30px;color: #434343;font-weight: 400;font-family: Montserrat, sans-serif;text-align: center;">
+                                                    WELCOME TO
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="15"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 25px;line-height: 25px;color: #969696;font-weight: 700;font-family: Montserrat, sans-serif;text-align: center;">
+                                                    EMAIL / NEWSLETTER TEMPLATES
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="120"></td>
+                                            </tr>
+                                        </table>
+                                         
+                                    </td>
+                                </tr>
                             </table>
                         </td>
                     </tr>
@@ -121,34 +209,258 @@
         <!-- Body -->
         <tr>
             <td>
-                <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                <table class="container" width="800" cellpadding="0" cellspacing="0" border="0" align="center" style="background: white;">
                     <tr>
                         <td>
-                            <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="background: white;">
+                            <table class="container" width="600" cellpadding="0" cellspacing="0" border="0" align="center">
                                 <tr>
-                                    <td style="font-size: 24px;letter-spacing: 1px;line-height: 24px;color: #434343;font-weight: 700;font-family: Montserrat;padding: 30px 20px 0 20px;">
+                                    <td style="font-size: 24px;letter-spacing: 1px;line-height: 24px;color: #434343;font-weight: 700;font-family: Montserrat, sans-serif;padding: 50px 20px 20px 20px">
                                         WELCOME TO SANTA HOUSE!
                                     </td>
                                 </tr>
             
                                 <tr>
-                                    <td style="font-size: 16px;letter-spacing: 0px;line-height: 28px;color: #545050;font-weight: 400;font-family: Poppins;padding: 20px 20px 0 20px;">
+                                    <td style="font-size: 16px;letter-spacing: 0px;line-height: 28px;color: #545050;font-weight: 400;font-family: Poppins, sans-serif;padding: 20px 20px 0 20px;">
                                         We want to share with you this message of love and joy! Thank you & for being such faithful customers! For your loyalty, we are extending a 25% OFF and FREE SHIPPING on our entire stock! This is our way of hav saying thank you!
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td  style="font-size: 16px;letter-spacing: 0px;line-height: 28px;color: #545050;font-weight: 400;font-family: Poppins;padding: 20px 20px 0 20px;">
+                                    <td  style="font-size: 16px;letter-spacing: 0px;line-height: 28px;color: #545050;font-weight: 400;font-family: Poppins, sans-serif;padding: 20px 20px 0 20px;">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sso eiusmod tempor incididunt ut labore et dolore magna aliqua. Utm ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  velit esse cillum dolore eu fugiat nulla pariatur. 
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td  style="font-size: 16px;letter-spacing: 0px;line-height: 28px;color: #545050;font-weight: 400;font-family: Poppins;padding: 20px 20px 0 20px;">
+                                    <td  style="font-size: 16px;letter-spacing: 0px;line-height: 28px;color: #545050;font-weight: 400;font-family: Poppins, sans-serif;padding: 20px 20px 0 20px;">
                                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qsasui officia deserunt mollit anim id est laborum. Sed ut perspiciatis undaie omnis iste natus error sit voluptatem accusantium doloremque sada laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore ii veritatis et quasi architecto  explicabo. 
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td  style="font-size: 16px;letter-spacing: 0px;line-height: 28px;color: #545050;font-weight: 400;font-family: Poppins;padding: 20px 20px 0 20px;">
+                                    <td  style="font-size: 16px;letter-spacing: 0px;line-height: 28px;color: #545050;font-weight: 400;font-family: Poppins, sans-serif;padding: 20px 20px 0 20px;">
                                         enim ipsam voluptatem quia voluptas sit aspernatsadaur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratioa xyx saaine voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorems ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non as numquam eius modi tempora incidunt ut labore et dolore magnams aliquam quaerat voluptatem.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td  style="font-size: 16px;letter-spacing: 0px;line-height: 28px;color: #85a2f5;font-weight: 400;font-family: Poppins, sans-serif;padding: 20px 20px 50px 20px;">
+                                        For more newsletter tips, download our free guide to creating email newsletters people actually read.
+                                    </td>
+                                </tr>
+                                <!-- Posts -->
+                                <tr>
+                                    <td style="padding: 20px 20px 50px 20px;">
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                            <tr>
+                                                <td class="column">
+                                                    <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                                        <tr>
+                                                            <td>
+                                                                <img width="100%" src="https://blog-email-template.tahirasadov.com/images/left.png" border="0" alt="">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="20"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-size: 16px;letter-spacing: 1px;line-height: 16px;color: #434343;font-weight: 700;font-family: Montserrat, sans-serif;">
+                                                                GOING TO NEXT POST
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="20"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-size: 14px;letter-spacing: 0px;line-height: 14px;color: #999999;font-weight: 400;font-family: Poppins, sans-serif;">
+                                                                BY: JHONE, SEP.11 2015.
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class="desktop-column" width="20"></td>
+                                                <td class="column">
+                                                    <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                                        <tr>
+                                                            <td>
+                                                                <img width="100%" src="https://blog-email-template.tahirasadov.com/images/right.png" border="0" alt="">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="20"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-size: 16px;letter-spacing: 1px;line-height: 16px;color: #434343;font-weight: 700;font-family: Montserrat, sans-serif;">
+                                                                BUSINESS MEETING
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="20"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-size: 14px;letter-spacing: 0px;line-height: 14px;color: #999999;font-weight: 400;font-family: Poppins, sans-serif;">
+                                                                BY: JHONE, SEP.11 2015.
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Thanks -->
+                                <tr>
+                                    <td style="padding: 20px 20px 50px 20px;">
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                            <tr>
+                                                <td style="font-size: 16px;letter-spacing: 0px;line-height: 16px;color: #999999;font-weight: 500;font-family: Poppins, sans-serif;">Thanks</td>
+                                            </tr>
+                                            <tr>
+                                                <td height="10"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 16px;letter-spacing: 0px;line-height: 16px;color: #434343;font-weight: 500;font-family: Poppins, sans-serif;">Uifuse Team.</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- Footer -->
+        <tr>
+            <td style="">
+                <table class="container" width="800" cellpadding="0" cellspacing="0" border="0" align="center" style="background: #454545">
+                    <tr class="row">
+                        <td class="column" style="apadding: 20px 20px 0 20px;">
+                            <table class="container" width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+                                <!-- Contact -->
+                                <tr class="row">
+                                    <td class="column">
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr class="row">
+                                                <td width="20"></td>
+                                                <td class="column-center">
+                                                    <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr class="row">
+                                                            <td height="50"></td>
+                                                        </tr>
+                                                        <tr class="row">
+                                                            <td class="column" style="font-size: 16px;letter-spacing: 0px;line-height: 16px;color: #f8fcff;font-weight: 400;font-family: Poppins, sans-serif;">
+                                                                Address: Name St no. 63, 21114
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="row">
+                                                            <td height="10"></td>
+                                                        </tr>
+                                                        <tr class="row">
+                                                            <td class="column" style="font-size: 16px;letter-spacing: 0px;line-height: 16px;color: #f8fcff;font-weight: 400;font-family: Poppins, sans-serif;">
+                                                                Bulvery Town Road United State
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="row">
+                                                            <td height="40"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class="column-center">
+                                                    <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr class="row">
+                                                            <td height="50"></td>
+                                                        </tr>
+                                                        <tr class="row">
+                                                            <td class="column-center" style="font-size: 16px;letter-spacing: 0px;line-height: 16px;color: #f8fcff;font-weight: 400;font-family: Poppins, sans-serif;text-align: right;">
+                                                                Phone: +33-114-4452213
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="row">
+                                                            <td height="10"></td>
+                                                        </tr>
+                                                        <tr class="row">
+                                                            <td class="column-center" style="font-size: 16px;letter-spacing: 0px;line-height: 16px;color: #f8fcff;font-weight: 400;font-family: Poppins, sans-serif;text-align: right;">
+                                                                <a style="color: #f8fcff;text-decoration: none;" href="mailto:info@domainname.com">info@domainname.com</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="row">
+                                                            <td height="40"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="20"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Social -->
+                                <tr class="row">
+                                    <td class="column">
+                                        <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr class="row">
+                                                <td class="column" align="center">
+                                                    <table width="276" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td>
+                                                                <a class="rollover" href="">
+                                                                    <img class="rollover-main" src="https://blog-email-template.tahirasadov.com/images/pinterest.png" width="36" style="display:block;width:36;" alt="Social image" border="0">
+                                                                    <div style="mso-hide:all;">
+                                                                        <img src="https://blog-email-template.tahirasadov.com/images/pinterest-hover.png" style="max-height:0px;display:block;width:36;" width="36" alt="" border="0">
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a class="rollover" href="">
+                                                                    <img class="rollover-main" src="https://blog-email-template.tahirasadov.com/images/facebook.png" width="36" style="display:block;width:36;" alt="Social image" border="0">
+                                                                    <div style="mso-hide:all;">
+                                                                        <img src="https://blog-email-template.tahirasadov.com/images/facebook-hover.png" style="max-height:0px;display:block;width:36;" width="36" alt="" border="0">
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a class="rollover" href="">
+                                                                    <img class="rollover-main" src="https://blog-email-template.tahirasadov.com/images/twitter.png" width="36" style="display:block;width:36;" alt="Social image" border="0">
+                                                                    <div style="mso-hide:all;">
+                                                                        <img src="https://blog-email-template.tahirasadov.com/images/twitter-hover.png" style="max-height:0px;display:block;width:36;" width="36" alt="" border="0">
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a class="rollover" href="">
+                                                                    <img class="rollover-main" src="https://blog-email-template.tahirasadov.com/images/rss.png" width="36" style="display:block;width:36;" alt="Social image" border="0">
+                                                                    <div style="mso-hide:all;">
+                                                                        <img src="https://blog-email-template.tahirasadov.com/images/rss-hover.png" style="max-height:0px;display:block;width:36;" width="36" alt="" border="0">
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a class="rollover" href="">
+                                                                    <img class="rollover-main" src="https://blog-email-template.tahirasadov.com/images/google.png" width="36" style="display:block;width:36;" alt="Social image" border="0">
+                                                                    <div style="mso-hide:all;">
+                                                                        <img src="https://blog-email-template.tahirasadov.com/images/google-hover.png" style="max-height:0px;display:block;width:36;" width="36" alt="" border="0">
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Copy -->
+                                <tr class="row">
+                                    <td class="column">
+                                        <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr class="row">
+                                                <td class="column" height="50"></td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="column" style="font-size: 14px;letter-spacing: 0px;line-height: 14px;color: #cdcdcd;font-weight: 400;font-family: Poppins, sans-serif;text-align: center;">
+                                                    @ 2015 Copyright. All rights reserved
+                                                </td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="column" height="50"></td>
+                                            </tr>
+                                        </table>     
                                     </td>
                                 </tr>
                             </table>
